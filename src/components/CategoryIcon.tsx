@@ -1,6 +1,7 @@
 import { BookOpen, Coffee, Compass, Gamepad2, GraduationCap, Trees } from 'lucide-react';
 import type { FilterCategory } from '../data/places';
 
+
 export function CategoryIcon({ category, size = 20, className = '' }: {
   category: FilterCategory;
   size?: number;

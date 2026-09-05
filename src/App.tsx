@@ -123,6 +123,7 @@ export default function App() {
       ? { title: 'Твои любимые места', description: 'Сохрани на потом. Или отправляйся прямо сейчас.' }
       : sectionCopy[category];
 
+      
   return (
     <MotionConfig reducedMotion="user">
       <div className="app-shell">

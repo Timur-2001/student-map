@@ -77,3 +77,4 @@ export default function PlaceDetail({ place, saved, onBack, onSave, onShowMap, n
     </motion.div>
   );
 }
+

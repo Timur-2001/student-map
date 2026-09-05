@@ -47,6 +47,7 @@ export default function PlaceCard({ place, saved, index, onSelect, onSave }: Pla
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, delay: Math.min(index * 0.055, 0.22) }}
     >
+      
       <button className="place-card-main" onClick={() => onSelect(place)} aria-label={`Подробнее: ${place.name}`}>
         <div className="place-image-wrap">
           <PlaceImage place={place} />

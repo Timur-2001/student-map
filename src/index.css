@@ -259,6 +259,7 @@ svg { flex-shrink: 0; }
 .about-faculty-link:hover { color: var(--purple-dark); }
 .about-disclaimer { margin-top: 13px; padding-top: 17px; border-top: 1px solid #eee5f5; color: #ad96ba; font-size: 10px; line-height: 1.8; }
 .about-return { width: 100%; margin-top: 24px; }
+
 .student-discount-badge {
   display: inline-flex;
   align-items: center;

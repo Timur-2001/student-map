@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Map, X } from 'lucide-react';
 
+
 export default function AboutModal({ onClose }: { onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement>(null);
 

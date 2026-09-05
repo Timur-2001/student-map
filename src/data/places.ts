@@ -115,6 +115,7 @@ export const places: Place[] = [
     priceLabel: 'Бесплатно',
     tags: ['На свежем воздухе', 'Для пробежки'],
   },
+  
   {
     id: 'coffee-like',
     name: 'Литературное кафе',

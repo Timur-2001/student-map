@@ -5,6 +5,7 @@ import { ArrowUpRight, Crosshair, Expand, GraduationCap, LoaderCircle, LocateFix
 import { CAMPUS_COORDINATES, campus, getCategory, type Place } from '../data/places';
 import { CategoryIcon, markerSvg } from './CategoryIcon';
 
+
 interface MapPanelProps {
   visiblePlaces: Place[];
   selectedPlace: Place | null;
