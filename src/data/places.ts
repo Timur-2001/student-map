@@ -1,4 +1,4 @@
-export type Category = 'university' | 'food' | 'parks' | 'leisure' | 'study';
+export type Category = 'university' | 'food' | 'parks' | 'leisure' | 'study' | 'discounts';
 export type FilterCategory = Category | 'all';
 
 export interface Place {
@@ -33,11 +33,44 @@ export const categories: {
   { id: 'parks', label: 'Прогулки', fullLabel: 'Парки / Прогулки', color: '#589377', tint: '#eaf4ed' },
   { id: 'leisure', label: 'Досуг', fullLabel: 'Досуг / Интересные места', color: '#cc7592', tint: '#faedf2' },
   { id: 'study', label: 'Учёба', fullLabel: 'Учёба / Коворкинги', color: '#608bbd', tint: '#ecf2fa' },
+  { id: 'discounts', label: 'Скидки твоего корпуса', fullLabel: 'Скидки / Предложения', color: '#a8df42', tint: '#ecf2fa'}
 ];
 
 // The faculty address is verified. Prices, amenities and walking times are demo estimates.
 // Stock photographs illustrate the atmosphere, not the actual venue interiors.
 export const places: Place[] = [
+  {
+    id: 'pizza',
+    name: 'Пиццерия "Фокс пицца"', 
+    category: 'discounts', 
+    coordinates: [52.251644, 104.259425],
+    address: 'Иркутск, пр. Юрия Тена, 26/5',
+    description: 'Горячая пицца рядом с корпусом — быстро, сытно и без долгой дороги после пар.',
+    details: 'Пиццерия Fox Pizza. Можно забрать заказ с собой или остаться с друзьями за столом. Большие порции, понятное меню и вкусы, которые спасают, когда после учёбы совсем нет сил готовить.',
+    studentReason: 'Близко к университету, удобно заскочить компанией или в одиночку. На студенческий бюджет хватает и на пиццу, и на вечер без лишней суеты.',
+    image: 'https://avatars.mds.yandex.net/get-tycoon/6481672/2a00000180020ce41cd039ab44f9437a7a9d/priority-headline-background',
+    imageAlt: 'Пицца',
+    price: 11000,
+    studentDiscount: "Скидка студентам ИГУ 5%",
+    priceLabel: '319 - 1200 ₽',
+    tags: ['Скидка от ИГУ']
+  },
+  {
+    id: 'auto',
+    name: 'Автошкола "Профессионал"', 
+    category: 'discounts', 
+    coordinates: [52.260759, 104.241539],
+    address: 'Иркутск, микрорайон Первомайский, 14А',
+    description: 'Обучение вождению с гибким графиком, чтобы успевать на пары и получать права.',
+    details: 'Современный автопарк и опытные инструкторы. Филиалы расположены удобно для студентов, а программа обучения адаптирована так, чтобы совмещать теорию с учёбой в университете.',
+    studentReason: 'Можно договориться о времени вождения до или после пар. Есть рассрочка оплаты, поэтому бюджет не пострадает, а скидки по студенческому билету — приятный бонус.',
+    image: 'https://static.tildacdn.com/tild3431-3965-4734-b430-346532343033/IMG_2004-min.jpg',
+    imageAlt: 'Авто',
+    price: 11000,
+    studentDiscount: "Скидка студентам ИГУ 15%",
+    priceLabel: 'от 11 000 ₽',
+    tags: ['Скидка от ИГУ']
+  },
   {
     id: 'kofeynik',
     name: 'Ежевика',
@@ -115,7 +148,7 @@ export const places: Place[] = [
     priceLabel: 'Бесплатно',
     tags: ['На свежем воздухе', 'Для пробежки'],
   },
-  
+
   {
     id: 'coffee-like',
     name: 'Литературное кафе',

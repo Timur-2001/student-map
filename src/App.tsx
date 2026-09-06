@@ -27,6 +27,7 @@ const sectionCopy: Record<FilterCategory, { title: string; description: string }
   parks: { title: 'Время немного выдохнуть', description: 'Больше свежего воздуха, меньше мыслей о дедлайнах.' },
   leisure: { title: 'Планы на свободный вечер', description: 'За пределами расписания тоже много интересного.' },
   study: { title: 'Большим идеям нужно место', description: 'Сосредоточься на главном. Тихий уголок уже нашёлся.' },
+  discounts: {title: 'Скидки твоего корпуса',description: 'Места со студенческими скидками',},
 };
 
 function Brand({ small = false }: { small?: boolean }) {
@@ -123,7 +124,7 @@ export default function App() {
       ? { title: 'Твои любимые места', description: 'Сохрани на потом. Или отправляйся прямо сейчас.' }
       : sectionCopy[category];
 
-      
+
   return (
     <MotionConfig reducedMotion="user">
       <div className="app-shell">
